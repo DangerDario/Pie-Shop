@@ -1,0 +1,1 @@
+export type Category = 'stickers' | 'shirts' | 'ephemera'; export interface Product { id: string; name: string; price: number; category: Category; description: string; longDescription: string; imageUrl: string; additionalImages?: string[]; vibe: string[]; specs?: string[]; } export interface CartItem extends Product { quantity: number; }
